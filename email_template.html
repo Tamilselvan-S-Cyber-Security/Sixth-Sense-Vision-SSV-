@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #2b86d9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .detection-box {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 0.9em;
+            text-align: right;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .detection-item {
+            margin: 10px 0;
+            padding: 8px;
+            background-color: white;
+            border-left: 4px solid #2b86d9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Security System Detection Alert</h2>
+    </div>
+
+    <div class="detection-box">
+        <h3>Detection Results</h3>
+        <div>{{detection_results}}</div>
+    </div>
+
+    <div class="image-container">
+        <h3>Captured Image</h3>
+        <img src="{{image}}" alt="Detection Image">
+    </div>
+
+    <div class="timestamp">
+        {{timestamp}}
+    </div>
+
+    <div style="margin-top: 20px; font-size: 0.8em; color: #666; text-align: center;">
+        This is an automated notification from your security system.
+        Please do not reply to this email.
+    </div>
+</body>
+</html>

@@ -52,11 +52,7 @@ pip install streamlit opencv-python-headless numpy pillow
 # Database configuration
 DATABASE_URL=postgresql://user:password@host:port/dbname
 
-# Email notification settings (optional)
-EMAILJS_USER_ID=your_user_id
-EMAILJS_TEMPLATE_ID=your_template_id
-EMAILJS_SERVICE_ID=your_service_id
-```
+
 
 ## 🚀 Running the Application
 
